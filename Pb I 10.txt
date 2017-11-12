@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+
+ int main()
+{
+int i, count_letters=0;
+char first_name[30],last_name[30],generate_id[30];
+
+printf("First name: ");
+gets(first_name);
+
+printf("Last name: ");
+gets(last_name);
+
+generate_id[0]=first_name[0];
+
+for(i=0;i<7;i++)
+    generate_id[i+1]=last_name[i];
+for(i=0;i<strlen(generate_id);i++)
+    printf("%c",tolower(generate_id[i]));
+
+
+
+
+  return 0;
+}

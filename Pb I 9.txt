@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+
+int main()
+{
+int i;
+char daysOfWeek[32]={"SunMonTuesWednesThursFriSaturday"};
+
+printf("a) ");
+ for(i=0;i<=2;i++)
+    printf("%c",daysOfWeek[i]);
+
+printf("\nb) ");
+for(i=24;i<=31;i++)
+       printf("%c",toupper(daysOfWeek[i]));
+
+printf("\nc) ");
+for(i=6;i<=9;i++)
+       printf("%c",daysOfWeek[i]);
+printf("day");
+
+printf("\nd) ");
+printf("%d",strlen(daysOfWeek)-1);
+
+
+  return 0;
+}

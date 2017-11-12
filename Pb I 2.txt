@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int arr[10];
+    int n,i;
+    printf("Insert a size for the sequence: ");
+    scanf("%d",&n);
+
+    for(i=0;i<n;i++)
+        {
+            printf("Input a element in to the sequence: ");
+            scanf("%d", &arr[i]);
+        }
+    for(i=1;i<=n;i++)
+        if(arr[i]==(arr[i-1]+arr[i+1])/2)
+            printf("The elements %d %d %d are in arithmetical progression with a ratio of %d \n", arr[i-1],arr[i],arr[i+1], arr[i+1]-arr[i]);
+         else printf("There was not found any elements in an arithmetical progression!");
+
+
+
+
+
+    return 0;
+}
